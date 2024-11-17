@@ -1,7 +1,7 @@
-import GY271
+from GY271 import GY271
 from time import sleep
 
-sensor = GY271.compass()
+sensor = GY271()
 
 print('[Press CTRL + C to end the script!]')
 try:
