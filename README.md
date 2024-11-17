@@ -8,8 +8,8 @@ The module has I2C communication lines, connect it to the I2C interfce of the Ra
 # Usage
 Just copy the gy271compass script into the same directory with the example script. In the example script, import the gy271compass script, and create the sensor object, like in the following lines of code:   
 ```
-import gy271compass as GY271
-sensor = GY271.compass(address=0x0d)
+from GY271 import GY271
+sensor = GY271(address=0x0d)
 ```
 and then use the sensor object to read the compass data. There are two functions that you can use. The first is get_bearing() which returns the direction angle, and the second read_temp() which returns the temperature of the sensor.
 
